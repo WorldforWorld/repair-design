@@ -1,0 +1,54 @@
+/** Colors **/
+$white: #ffffff
+$darkLight: #666666
+$dark: #131313
+$blue: #009adf
+$color: #ffffff
+/** Styles **/
+.footer
+  margin-top: 60px
+  background-color: $dark
+  padding: 59px 0
+  color: $darkLight
+  &-policy-link
+    font-size: 12px
+  & p
+    margin-bottom: 14px
+  & a
+    color: $darkLight
+    text-decoration: none
+    &:hover
+      color: $white
+  & small
+    display: block
+    margin-top: 56px
+    line-height: 16px
+    font-size: 10px
+    max-width: 80%
+  & ul
+    padding: 0
+    list-style: none
+    & li
+      line-height: 32px
+  &-contacts, &-social-links
+    text-align: right
+  &-contacts_phone
+    font-weight: 400
+    font-size: 20px
+    color: $blue
+  &-social-links li
+    display: inline-block
+    & a
+      display: inline-block
+      width: 42px
+      height: 42px
+      background-color: rgba($color, 0.1)
+      text-align: center
+      border-radius: 50%
+      line-height: 42px
+      margin-left: 10px
+      -webkit-transition: all 0.2s
+      transition: all 0.2s
+      &:hover
+          background-color: rgba($color, 0.9)
+          color: $dark
