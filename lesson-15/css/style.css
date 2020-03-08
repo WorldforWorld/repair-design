@@ -379,8 +379,10 @@ body {
   align-items: center; }
 
 .logo {
-  color: #E3B873;
   text-transform: uppercase; }
+  .logo a {
+    text-decoration: none;
+    color: #E3B873; }
 
 .nav__item {
   color: #ffffff;
