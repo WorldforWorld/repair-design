@@ -390,23 +390,26 @@ body {
     text-decoration: none;
     color: #E3B873; }
 
-.nav__item {
-  color: #ffffff;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin-right: 2.5rem;
-  transition: color 0.2s; }
-  .nav__item:hover {
-    color: #E3B873; }
+.nav {
+  margin-right: 1.69rem; }
+  .nav__item {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 2.5rem;
+    transition: color 0.2s; }
+    .nav__item:hover {
+      color: #E3B873; }
 
 .phone {
   color: #E3B873; }
 
-.contacts__phone {
-  margin-right: 45px; }
-
-.contacts__button {
-  margin-left: 43px; }
+.contacts {
+  margin-right: -5rem; }
+  .contacts__phone {
+    margin-right: 45px; }
+  .contacts__button {
+    margin-left: 43px; }
 
 .hero {
   position: relative;
