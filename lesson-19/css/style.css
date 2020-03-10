@@ -552,7 +552,8 @@ img {
   font-family: 'Yeseva One', cursive;
   font-size: 1.29rem;
   margin-top: 0;
-  margin-bottom: 0.7rem; }
+  margin-bottom: 0.7rem;
+  font-weight: normal; }
 
 .card__list {
   padding: 0 0 0 1rem;
