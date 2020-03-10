@@ -527,12 +527,16 @@ body {
   .container {
     display: flex;
     justify-content: center; }
-  .contacts__phone {
-    margin-right: 0;
-    color: #ffffff;
-    text-decoration: none; }
-  .contacts__button {
-    display: none; }
+  .menu {
+    width: 90%; }
+  .contacts {
+    margin-right: 0; }
+    .contacts__phone {
+      margin-right: 0;
+      color: #ffffff;
+      text-decoration: none; }
+    .contacts__button {
+      display: none; }
   .title {
     font-size: 1.64rem; }
   .hero {
