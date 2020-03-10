@@ -363,6 +363,9 @@ img {
     text-align: center;
     text-transform: uppercase;
     font-family: 'Yeseva One', cursive; }
+    .section-title__heading {
+      font-weight: normal;
+      font-style: normal; }
     .section-title__image {
       display: flex;
       justify-content: center;
@@ -618,7 +621,8 @@ img {
 @media screen and (max-width: 570px) {
   .container {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    flex-direction: column; }
   .menu {
     width: 90%; }
   .contacts {
@@ -636,7 +640,8 @@ img {
     .hero__scroll-down {
       display: none; }
     .hero__content {
-      max-width: 22.86rem; }
+      max-width: 22.86rem;
+      margin: 0 auto; }
     .hero__text {
       font-size: 1.29rem;
       margin-bottom: 2.28rem; }
