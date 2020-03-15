@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: -4px 3px 4px rgba(0, 0, 0, 1);
+}
+.section {
+  min-height: 100vh;
+  text-align: center;
+  width: 100%;
+  display: table;
+}
+.wrap-block {
+  display: table-cell;
+  vertical-align: middle;
+  color: #ffffff;
+}
