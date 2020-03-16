@@ -79,18 +79,26 @@ $(document).ready(function () {
   var next =$('.swiper-button-next');
   var prev =$('.swiper-button-prev');
   var bullets =$('.swiper-pagination');
-  
   bullets.css('left', prev.width()+25);
   next.css('left', prev.width() +10 + bullets.width() + 30);
-  var swiper = new Swiper('.swiper-containers', {
+  var swiper = new Swiper('.swiper-container', {
     pagination: {
       el: '.swiper-paginations',
       clickable: true,
       renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (index + 1) + '</span>';
-      },
+        if (index<=5) {
+        return '<span class="' + className + ' yulya' + '">' + '<span class="' + ' yulyas' + '">' + (index + 1)  + '</span>' + '<br>' + 'Выезд на замер помещения' + '</span>';
+      }
     },
+  },
+});
+var yulya = $('.yulya');
+var umnichka = $('#two');
+jQuery(function($){
+  document.removeClass('.swiper-slide-active');
+    yulya.on('click', function (index) {
+      umnichka.toggleClass('.swiper-slide-active');
+    });
   });
-
 });
 

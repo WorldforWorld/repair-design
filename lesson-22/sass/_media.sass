@@ -21,6 +21,55 @@
     &-slide
       &__text
         flex-basis: 50%
+@media screen and ( min-width: 769px )
+  .swiper-container-horizontal>.swiper-pagination-bullets
+    width: auto
+
+@media screen and ( max-width: 768px )
+  .row
+    &-projects
+      flex-direction: column
+      align-items: center
+  .wraps
+    display: flex
+    flex-direction: column
+  .col
+    &-50
+      order: 1
+      width: 100%
+      font-size: 1rem
+      &:nth-last-of-type(1)
+        order: 0
+        margin-top: 0
+  .section
+    &-title
+      &__word
+        display: block
+        text-align: center
+        &::after
+          display: none
+      &__heading
+        &--primary
+          text-align: center
+          margin-bottom: 6px
+      &__text
+        text-align: center
+  .swiper
+    &-button
+      &-prev
+        left: 50%
+        margin-left: -67px
+      &-next
+        left: 50% !important
+        margin-left: 95px
+    &-container
+  .swiper-container-horizontal>.swiper-pagination-bullets
+    justify-content: center
+    margin-left: -25px
+  .indent
+  .upindent
+    margin-bottom: -4.5rem
+
 @media screen and ( max-width: 760px )
   .row
     flex-direction: column
@@ -44,21 +93,7 @@
       order: 0
     &__text
       color: $light
-  .row
-    &-projects
-      flex-direction: column
-      align-items: center
-  .wraps
-    display: flex
-    flex-direction: column
-  .col
-    &-50
-      order: 1
-      width: 100%
-      font-size: 1rem
-      &:nth-last-of-type(1)
-        order: 0
-        margin-top: 0
+ 
 
 @media screen and ( max-width: 570px )
   .container
@@ -95,8 +130,21 @@
     &-slide
       &__text
         flex-basis: 50%
+  .swiper
+    &-button
+      &-prev
+        left: 50%
+        margin-left: -103px
+      &-next
+        left: 50% !important
+        margin-left: 60px
+    &-container
+  .swiper-container-horizontal>.swiper-pagination-bullets
+    margin-left: -62px
+
 @media screen and ( max-height: 520px )
   .hero
     &__scroll-down
       display: none
+
   
