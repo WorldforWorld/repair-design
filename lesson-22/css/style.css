@@ -543,6 +543,7 @@ img {
     margin-left: 43px; }
 
 .hero {
+  padding-bottom: 83px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -838,7 +839,12 @@ img {
   margin-right: 250px !important; }
 
 .yulyas {
-  border-bottom: 1px solid #E3B873; }
+  border-bottom: 1px solid #E3B873;
+  font-family: 'Yeseva One', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 21px; }
 
 @media screen and (max-width: 1200px) {
   html {

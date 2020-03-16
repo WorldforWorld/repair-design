@@ -63,8 +63,14 @@ $(document).ready(function () {
   $('#upbutton').click(function() {
       $('html, body').stop().animate({scrollTop : 0}, 800);
   });
+  /* --------------------------------------------- */
+  var one = $('.one');
+  var two = $('.two');
+  var three = $('.three');
+  var four = $('.four');
 
-  var mySwiper = new Swiper ('.swiper-container', {
+
+  var mySwiper = new Swiper (one, {
     loop: true,
     pagination: {
       el: '.swiper-pagination',
@@ -75,30 +81,55 @@ $(document).ready(function () {
       prevEl: '.swiper-button-prev',
     },
   });
+  var mySwiper2 = new Swiper (two, {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+  var mySwiper3 = new Swiper (three, {
+    loop: true,
+    pagination: {
+      el: '.five',
+      type: 'bullets',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 
-  var next =$('.swiper-button-next');
-  var prev =$('.swiper-button-prev');
-  var bullets =$('.swiper-pagination');
-  bullets.css('left', prev.width()+25);
-  next.css('left', prev.width() +10 + bullets.width() + 30);
-  var swiper = new Swiper('.swiper-container', {
+
+  var swiper = new Swiper (four, {
+    loop: true,
     pagination: {
       el: '.swiper-paginations',
-      clickable: true,
+      type: 'bullets',
       renderBullet: function (index, className) {
-        if (index<=5) {
-        return '<span class="' + className + ' yulya' + '">' + '<span class="' + ' yulyas' + '">' + (index + 1)  + '</span>' + '<br>' + 'Выезд на замер помещения' + '</span>';
-      }
+        return '<span class="' + className + ' yulya' + '">' + '<span class="' + ' yulyas' + '">' + 0 + (index + 1)  + '</span>' + '<br>' + '<span class="' + ' yulyass' + '">' + 'Выезд на замер помещения' + '</span>' + '</span>';
     },
-  },
-});
-var yulya = $('.yulya');
+    },
+  });
+  var next =$('.swiper-button-next');
+  var nexts =$('.nexts');
+  var prev =$('.swiper-button-prev');
+  var bullets =$('.swiper-pagination');
+
+  bullets.css('left', prev.width()+25);
+  next.css('left', prev.width() +10 + bullets.width() + 30);
+  nexts.css('left', prev.width() +10 + bullets.width() + 100);
+/* var yulya = $('.yulya');
 var umnichka = $('#two');
 jQuery(function($){
   document.removeClass('.swiper-slide-active');
     yulya.on('click', function (index) {
       umnichka.toggleClass('.swiper-slide-active');
     });
-  });
+  }); */
 });
 
