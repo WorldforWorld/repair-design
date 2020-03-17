@@ -33,7 +33,7 @@
     &::placeholder
       color: $light
 .policy
-  &__checkbox
+  &__checkbox, &__checkboxs, &__checkboxss
     opacity: 0
     visibility: hidden
     &:checked +
@@ -58,9 +58,12 @@
       margin-right: 0.64rem
     &--center
       justify-content: center
+.input
 input
   outline: none
-.invalid
+div.invalid
   color: tomato
+  position: absolute
+  padding-left: 60px
 .form__input.invalid
   border-bottom: 1px solid tomato

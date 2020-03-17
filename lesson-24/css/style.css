@@ -363,10 +363,10 @@ template {
   .input--light::placeholder {
     color: #ffffff; }
 
-.policy__checkbox {
+.policy__checkbox, .policy__checkboxs, .policy__checkboxss {
   opacity: 0;
   visibility: hidden; }
-  .policy__checkbox:checked + .policy__label::before {
+  .policy__checkbox:checked + .policy__label::before, .policy__checkboxs:checked + .policy__label::before, .policy__checkboxss:checked + .policy__label::before {
     background: #E3B873 url("../img/check.svg") no-repeat center/0.8rem; }
 
 .policy__label {
@@ -391,8 +391,10 @@ template {
 input {
   outline: none; }
 
-.invalid {
-  color: tomato; }
+div.invalid {
+  color: tomato;
+  position: absolute;
+  padding-left: 60px; }
 
 .form__input.invalid {
   border-bottom: 1px solid tomato; }
@@ -900,7 +902,8 @@ img {
     padd: 1.285rem 4.785rem; }
   .footer__menu {
     background-color: #131313;
-    padding: 4.285rem 0; }
+    padding: 4.285rem 0;
+    padding-right: 20px; }
 
 .modal {
   opacity: 0;
@@ -949,6 +952,7 @@ img {
     display: flex;
     flex-direction: column; }
   .modal__input-group {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin-bottom: 3.185rem; }
@@ -1040,7 +1044,14 @@ img {
     flex-direction: column;
     order: 0; }
   .section-title__text {
-    color: #ffffff; } }
+    color: #ffffff; }
+  .footer {
+    background-color: #181818;
+    background-image: none; } }
+
+@media screen and (max-width: 400px) {
+  .control__button {
+    padding: 1rem 5.9rem !important; } }
 
 @media screen and (max-width: 571px) {
   .control {
