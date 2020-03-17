@@ -150,6 +150,7 @@ $(document).ready(function () {
         email: true
       }
     }, // сообщения
+    errorElement: "div",
     messages: {
       userName: {
         required:"Заполните поле",
@@ -174,6 +175,7 @@ $(document).ready(function () {
       },
       userPhone2: "required",
     }, // сообщения
+    errorElement: "div",
     messages: {
       userName2: {
         required:"Заполните поле",
@@ -195,6 +197,7 @@ $(document).ready(function () {
       userPhone3: "required",
       userQuestion: "required",
     }, // сообщения
+    errorElement: "div",
     messages: {
       userName3: {
         required:"Заполните поле",

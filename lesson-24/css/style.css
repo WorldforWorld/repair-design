@@ -390,11 +390,12 @@ template {
 
 input {
   outline: none; }
-  input.invalid {
-    border-bottom: 1px solid tomato; }
 
-label.invalid {
+.invalid {
   color: tomato; }
+
+.form__input.invalid {
+  border-bottom: 1px solid tomato; }
 
 .container {
   width: 85%;
