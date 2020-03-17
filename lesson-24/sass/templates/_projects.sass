@@ -1,0 +1,71 @@
+.projects
+  padding-bottom: 30rem
+.swiper
+  &-container
+    padding-bottom: 5.7rem
+  &-slide
+    display: flex
+    flex-wrap: wrap
+    &__information
+      width: 100%
+      display: inline-block
+      font-family: 'Yeseva One', cursive
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 25px
+      text-transform: uppercase
+      color: $light
+      padding-bottom: 22px
+    &__text
+      font-family: 'Futura Book'
+      flex-basis: 34%
+      padding-bottom: 1.5rem
+      font-style: normal
+      font-weight: normal
+    &__heading
+      font-size: 1.285rem
+      line-height: 1.78rem
+      font-family: 'Yeseva One', cursive
+      color: $primary
+      text-transform: uppercase
+      margin-bottom: 0.64rem
+      font-weight: normal
+      margin-right: 1rem
+    &__value
+      font-family: 'Futura Book'
+      font-style: normal
+      font-weight: normal
+      font-size: 1.071rem
+      line-height: 1.429rem
+  &-pagination
+    &-bullet
+      background-color: rgba($light, 0.3)
+      &-active
+        background-color: $light
+  &-button
+    &-prev, &-next
+      bottom: 0
+      top: auto
+      background-size: 42px
+      width: 42px
+      height: 14px
+      &::after
+        display: none
+    &-prev
+      left: 0
+      background: url('../img/arrow-prev.svg') no-repeat center
+    &-next
+      background: url('../img/arrow-next.svg') no-repeat center
+.swiper-container-horizontal>.swiper-pagination-bullets
+  bottom: -2px
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet
+  margin-right: 16px
+.wraps
+  display: flex
+  flex-direction: row
+  width: 100%
+.row
+  &-projects
+    display: flex
+    flex-direction: column
