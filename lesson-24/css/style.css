@@ -887,7 +887,7 @@ img {
     width: 70px;
     height: 70px;
     position: absolute;
-    left: -13%;
+    left: 9px;
     top: -35px;
     display: flex;
     justify-content: center;
@@ -1018,7 +1018,9 @@ img {
   html {
     font-size: 12px; }
   .nav__item {
-    margin-right: 1rem; } }
+    margin-right: 1rem; }
+  .command__icon {
+    left: -13%; } }
 
 @media screen and (max-width: 992px) {
   .section-title__text {
@@ -1030,7 +1032,9 @@ img {
   .hero__content {
     margin-left: 0; }
   .swiper-slide__text {
-    flex-basis: 50%; } }
+    flex-basis: 50%; }
+  .command__icon {
+    left: -13%; } }
 
 @media screen and (min-width: 769px) {
   .swiper-container-horizontal > .swiper-pagination-bullets {
@@ -1100,7 +1104,9 @@ img {
     .command__card {
       text-align: center; }
     .command-card__text {
-      margin-left: auto; } }
+      margin-left: auto; }
+    .command__icon {
+      left: -13%; } }
 
 @media screen and (max-width: 400px) {
   .control__button {
