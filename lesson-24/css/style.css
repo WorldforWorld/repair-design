@@ -919,7 +919,8 @@ img {
     margin: auto;
     margin-top: -20rem;
     margin-bottom: 3.714rem;
-    padding: 2.5rem; }
+    padding: 2.5rem;
+    position: relative; }
   .footer__title {
     text-transform: uppercase;
     font-family: 'Yeseva one', curive;
@@ -1101,6 +1102,8 @@ img {
     background-image: none; }
   .command {
     background-color: #131313; }
+    .command-control__text {
+      color: #ffffff; }
     .command__card {
       text-align: center; }
     .command-card__text {
