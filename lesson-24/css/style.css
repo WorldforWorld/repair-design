@@ -874,6 +874,7 @@ img {
     background-color: #131313;
     z-index: -1; }
   .command__card {
+    margin-bottom: 9.9rem;
     text-align: center; }
   .command-section-title {
     color: #ffffff; }
@@ -886,11 +887,12 @@ img {
     width: 70px;
     height: 70px;
     position: absolute;
-    left: 9px;
+    left: -13%;
     top: -35px;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5); }
   .command-card__item {
     list-style-type: none; }
   .command-card__text {
@@ -1092,7 +1094,13 @@ img {
     color: #ffffff; }
   .footer {
     background-color: #181818;
-    background-image: none; } }
+    background-image: none; }
+  .command {
+    background-color: #131313; }
+    .command__card {
+      text-align: center; }
+    .command-card__text {
+      margin-left: auto; } }
 
 @media screen and (max-width: 400px) {
   .control__button {
