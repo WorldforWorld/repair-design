@@ -123,14 +123,30 @@ $(document).ready(function () {
   bullets.css('left', prev.width()+25);
   next.css('left', prev.width() +10 + bullets.width() + 30);
   nexts.css('left', prev.width() +10 + bullets.width() + 100);
-  /* var yulya = $('.yulya');
-  var umnichka = $('#two');
-  jQuery(function($){
-    document.removeClass('.swiper-slide-active');
-      yulya.on('click', function (index) {
-        umnichka.toggleClass('.swiper-slide-active');
-      });
-    }); */
+
   new WOW().init();
+
+  //скрипт, который запускает анимацию элементов только тогда, когда пользователь увидел его.
+  var target = $('.col-30');
+  var targetPos = target.offset().top;
+  var winHeight = $(window).height();
+  var scrollToElem = targetPos - winHeight;
+  $(window).scroll(function(){
+    var winScrollTop = $(this).scrollTop();
+    if(winScrollTop > scrollToElem){
+      target.addClass('animation1');
+    }
+  });
+
+  var target2 = $('.types__section-title');
+  var targetPos2 = target2.offset().top;
+  var winHeight2 = $(window).height();
+  var scrollToElem2 = targetPos2 - winHeight2;
+  $(window).scroll(function(){
+    var winScrollTop2 = $(this).scrollTop();
+    if(winScrollTop2 > scrollToElem2){
+      target2.addClass('animation2');
+    }
+  });
 });
 
