@@ -362,6 +362,8 @@ template {
     color: #ffffff; }
   .input--light::placeholder {
     color: #ffffff; }
+  .input--dark {
+    color: #131313; }
 
 .policy__checkbox, .policy__checkboxs, .policy__checkboxss {
   opacity: 0;
@@ -1186,7 +1188,9 @@ img {
     left: 50% !important;
     margin-left: 60px; }
   .swiper-container-horizontal > .swiper-pagination-bullets {
-    margin-left: -62px; } }
+    margin-left: -62px; }
+  .footer__input-group {
+    flex-basis: 100%; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
