@@ -502,6 +502,46 @@ img {
   position: fixed;
   z-index: 999; }
 
+.animation1 {
+  -webkit-animation-name: slideOpacity;
+  animation-name: slideOpacity;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out; }
+
+.animation2 {
+  -webkit-animation-name: slideRight;
+  animation-name: slideRight;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out; }
+
+@-webkit-keyframes slideRight {
+  0% {
+    padding-right: 1000px; }
+  100% {
+    padding-right: 0; } }
+
+@keyframes slideRight {
+  0% {
+    padding-right: 1000px; }
+  100% {
+    padding-right: 0; } }
+
+@-webkit-keyframes slideOpacity {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes slideOpacity {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 .header {
   position: fixed;
   left: 0;
