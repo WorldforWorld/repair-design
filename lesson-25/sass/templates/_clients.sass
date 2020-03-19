@@ -1,32 +1,53 @@
 .clients
-  padding-bottom: 30rem
+  padding-bottom: 29.1rem
   &__person
     display: flex
     flex-direction: row
     align-items: center
-    margin: 24px 26px 20px 20px
+    margin: 24px 30px 17px 20px
   &__section
     &-title
       &__texts
         margin-bottom: 10rem
+        max-width: 355px
   &__card
     &__pricetag
+      font-family: 'Yeseva One', cursive
+      font-style: normal
+      font-weight: normal
+      font-size: 17px
+      line-height: 24px
+      text-transform: uppercase
+      padding: 0
+      bottom: -2.6rem
+      background-color: $light
       display: flex
       flex-direction: row
       align-items: center
     &__result
+      padding-right: 14px
+      background-color: $primary
+      & sup
+        font-size: 10px
       & img
+        padding: 10px 13px 10px 16px
         vertical-align: middle
       &:nth-of-type(2)
-        border-left: 1px solid $light
-        padding-top: 15%
-        padding-bottom: 8%
-        padding-right: 10px
+        margin-left: 2px
+        padding-left: 2px
+        text-transform: none
     &__item
       list-style: none
+      font-size: 15px
+      line-height: 180%
+      padding-left: 5px
     &__text
       padding: 1.79rem 0.1rem
+      max-width: 379px
+      padding-right: 12px
     &__image
-      padding-right: 20px
+      padding-right: 25px
     &__title
       display: inline-block
+      padding-top: 12px
+      line-height: 23px
