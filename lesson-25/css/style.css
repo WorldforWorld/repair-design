@@ -864,8 +864,7 @@ img {
     padding: 1.214rem 3.9rem; }
 
 .command {
-  position: relative;
-  padding-bottom: 30rem; }
+  position: relative; }
   .command::before {
     content: '';
     position: absolute;
@@ -911,6 +910,35 @@ img {
     margin-top: 3.5rem; }
     .command-control__text::before {
       margin-bottom: 1rem; }
+
+.clients {
+  padding-bottom: 30rem; }
+  .clients__person {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 24px 26px 20px 20px; }
+  .clients__section-title__texts {
+    margin-bottom: 10rem; }
+  .clients__card__pricetag {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .clients__card__result img {
+    vertical-align: middle; }
+  .clients__card__result:nth-of-type(2) {
+    border-left: 1px solid #ffffff;
+    padding-top: 15%;
+    padding-bottom: 8%;
+    padding-right: 10px; }
+  .clients__card__item {
+    list-style: none; }
+  .clients__card__text {
+    padding: 1.79rem 0.1rem; }
+  .clients__card__image {
+    padding-right: 20px; }
+  .clients__card__title {
+    display: inline-block; }
 
 .footer {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
@@ -1218,7 +1246,9 @@ img {
   .swiper-container-horizontal > .swiper-pagination-bullets {
     margin-left: -62px; }
   .footer__input-group {
-    flex-basis: 100%; } }
+    flex-basis: 100%; }
+  .footer__map {
+    max-width: 100%; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
