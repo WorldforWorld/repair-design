@@ -1184,7 +1184,7 @@ img {
   .section-title__text {
     color: #ffffff; }
   .footer {
-    background-color: #181818;
+    background-color: #131313;
     background-image: none; }
   .command {
     background-color: #131313; }
@@ -1196,8 +1196,8 @@ img {
       margin-left: auto; }
     .command__icon {
       left: -13%; }
-  .clients__card {
-    margin-bottom: 170px; } }
+  .clients {
+    display: none; } }
 
 @media screen and (max-width: 400px) {
   .control__button {
