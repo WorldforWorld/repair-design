@@ -159,6 +159,9 @@ $(document).ready(function () {
       userEmail: {
         required: true,
         email: true
+      },
+      policyCheckboxs: {
+        required: true
       }
     }, // сообщения
     errorElement: "div",
@@ -172,7 +175,18 @@ $(document).ready(function () {
       userEmail: {
         required: "Заполните поле",
         email: "Введите корректный email"
+      },
+      policyCheckboxs: {
+        required: "Подтвердите соглашение"
       }
+    },
+
+    errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+          return element.next('label').append(error);
+      }
+  
+       error.insertAfter($(element));
     },
     submitHandler: function(form) {
       $.ajax({
@@ -200,6 +214,9 @@ $(document).ready(function () {
         maxlength: 15
       },
       userPhone2: "required",
+      policyCheckbox: {
+        required: true
+      }
     }, // сообщения
     errorElement: "div",
     messages: {
@@ -209,6 +226,9 @@ $(document).ready(function () {
         maxlength: "Слишком длинное имя"
       },
       userPhone2: "Заполните поле",
+      policyCheckbox: {
+        required: "Подтвердите соглашение"
+      }
     },
     submitHandler: function(form) {
       $.ajax({
@@ -237,6 +257,9 @@ $(document).ready(function () {
       },
       userPhone3: "required",
       userQuestion: "required",
+      policyCheckboxss: {
+        required: true
+      }
     }, // сообщения
     errorElement: "div",
     messages: {
@@ -247,6 +270,9 @@ $(document).ready(function () {
       },
       userPhone3: "Заполните поле",
       userQuestion: "Введите свой вопрос",
+      policyCheckboxss: {
+        required: "Подтвердите соглашение"
+      }
     },
     submitHandler: function(form) {
       $.ajax({

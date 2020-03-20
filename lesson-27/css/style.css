@@ -396,10 +396,18 @@ input {
 div.invalid {
   color: tomato;
   position: absolute;
-  padding-left: 60px; }
+  padding-top: 60px; }
 
 .form__input.invalid {
   border-bottom: 1px solid tomato; }
+
+div#policyCheckbox-error.invalid {
+  margin-top: -32px;
+  right: 50%; }
+
+div#policyCheckboxss-error.invalid {
+  margin-top: -32px;
+  right: 50%; }
 
 .container {
   width: 85%;
@@ -1265,9 +1273,11 @@ img {
       margin-bottom: -24px; }
     .control__text {
       color: #ffffff; }
+    .control__label {
+      color: #ffffff; }
     .control__policy-label {
       color: #ffffff;
-      margin-top: -73px;
+      margin-top: -62px;
       margin-bottom: 66px; }
     .control__button {
       order: 1;
@@ -1280,7 +1290,9 @@ img {
     color: rgba(255, 255, 255, 0.5); }
   .video__play {
     width: 60px;
-    height: 60px; } }
+    height: 60px; }
+  div#policyCheckbox-error.invalid {
+    margin-top: -100px; } }
 
 @media screen and (max-width: 570px) {
   .container {
