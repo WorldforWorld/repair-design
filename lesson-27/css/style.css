@@ -403,11 +403,19 @@ div.invalid {
 
 div#policyCheckbox-error.invalid {
   margin-top: -32px;
-  right: 50%; }
+  right: 50%;
+  font-size: 1rem;
+  font-family: 'Futura Book'; }
+
+div#policyCheckboxs-error.invalid {
+  font-size: 1rem;
+  font-family: 'Futura Book'; }
 
 div#policyCheckboxss-error.invalid {
   margin-top: -32px;
-  right: 50%; }
+  right: 50%;
+  font-size: 1rem;
+  font-family: 'Futura Book'; }
 
 .container {
   width: 85%;
