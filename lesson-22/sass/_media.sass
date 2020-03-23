@@ -1,11 +1,48 @@
 @media screen and ( max-width: 1200px )
- 
+  .parents
+    left: 43px !important
+  .steps
+    &__bullet 
+      flex-basis: 29%
+      &:nth-child(3)
+        padding-left: 84px
+      &:nth-child(6)
+        padding-left: 84px
   html
     font-size: 12px
   .nav
     &__item
       margin-right: 1rem
+  .nexts
+    left: 202px !important
 @media screen and ( max-width: 992px )
+  .parents
+    left: 76px
+  .steps
+    &__swiper-slide
+      width: 100% !important
+    &__wraps
+      display: flex
+      flex-direction: column
+    &__bullet 
+      flex-basis: 29%
+    &__section-title 
+      margin-left: 25%
+  .nexts
+    left: 248px !important
+  .col
+    &-60
+      display: flex
+      justify-content: center
+      margin-left: auto
+      margin-right: auto
+      width: 60%
+      order: 1
+      margin-top: 46px
+      &:nth-last-of-type(1)
+        width: 90%
+        order: 0
+        margin-bottom: -127px
   .section
     &-title
       &__text
@@ -26,6 +63,8 @@
     width: auto
 
 @media screen and ( max-width: 768px )
+  .steps
+    display: none
   .row
     &-projects
       flex-direction: column
