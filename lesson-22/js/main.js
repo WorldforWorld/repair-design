@@ -65,12 +65,11 @@ $(document).ready(function () {
   });
   /* --------------------------------------------- */
   var one = $('.one');
-  var two = $('.two');
   var three = $('.three');
   var four = $('.four');
 
 
-  var mySwiper = new Swiper (one, {
+  var swiper = new Swiper (one, {
     loop: true,
     pagination: {
       el: '.swiper-pagination',
@@ -81,7 +80,7 @@ $(document).ready(function () {
       prevEl: '.swiper-button-prev',
     },
   });
-  var mySwiper2 = new Swiper (two, {
+  var mySwiper = new Swiper (three, {
     loop: true,
     pagination: {
       el: '.swiper-pagination',
@@ -91,30 +90,51 @@ $(document).ready(function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    
   });
-  var mySwiper3 = new Swiper (three, {
+  var mySwiper4 = new Swiper (four,  {
     loop: true,
+    progressbarOpposite: true,
     pagination: {
-      el: '.five',
+      el: '.swiper-pagination',
       type: 'bullets',
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
-
-
-  var swiper = new Swiper (four, {
-    loop: true,
-    pagination: {
-      el: '.swiper-paginations',
-      type: 'bullets',
+      clickable: true,
       renderBullet: function (index, className) {
-        return '<span class="' + className + ' yulya' + '">' + '<span class="' + ' yulyas' + '">' + 0 + (index + 1)  + '</span>' + '<br>' + '<span class="' + ' yulyass' + '">' + 'Выезд на замер помещения' + '</span>' + '</span>';
+        if (index == 0) {
+          return '<span class="' + className  + ' steps__bullet' + '">' + '<span class="' + 'steps__index' + '">' + 0 + (index + 1) + '</span>'  + '<span class="' + 'steps__name' + '">' + 'Выезд на замер помещения' + '</span>' + '</span>';
+        }
+        if (index == 1) {
+          return '<span class="' + className  + ' steps__bullet' + '">' + '<span class="' + 'steps__index' + '">' + 0 + (index + 1) + '</span>'  + '<span class="' + 'steps__name' + '">' + 'Составление сметы' + '</span>' + '</span>';
+        }
+        if (index == 2) {
+          return '<span class="' + className  + ' steps__bullet' + '">' + '<span class="' + 'steps__index' + '">' + 0 + (index + 1) + '</span>'  + '<span class="' + 'steps__name' + '">' + 'Разработка  дизайн проекта' + '</span>' + '</span>';
+        }
+        if (index == 3) {
+          return '<span class="' + className  + ' steps__bullet' + '">' + '<span class="' + 'steps__index' + '">' + 0 + (index + 1) + '</span>'  + '<span class="' + 'steps__name' + '">' + 'Закупка расходных материалов' + '</span>' + '</span>';
+        }
+        if (index == 4) {
+          return '<span class="' + className  + ' steps__bullet' + '">' + '<span class="' + 'steps__index' + '">' + 0 + (index + 1) + '</span>'  + '<span class="' + 'steps__name' + '">' + 'Ремонтно-отделочные работы' + '</span>' + '</span>';
+        }
+        if (index == 5) {
+          return '<span class="' + className  + ' steps__bullet' + '">' + '<span class="' + 'steps__index' + '">' + 0 + (index + 1) + '</span>'  + '<span class="' + 'steps__name' + '">' + 'Приемка-сдача работ' + '</span>' + '</span>';
+        }
+      }
     },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
+    controller: {
+      control: mySwiper,
+      by: mySwiper,
+    },
+    // renderExternal: {
+    //   offset: '50px',
+    // }
   });
+  mySwiper.update();
+
+  
   var next =$('.swiper-button-next');
   var nexts =$('.nexts');
   var prev =$('.swiper-button-prev');
@@ -122,14 +142,6 @@ $(document).ready(function () {
 
   bullets.css('left', prev.width()+25);
   next.css('left', prev.width() +10 + bullets.width() + 30);
-  nexts.css('left', prev.width() +10 + bullets.width() + 100);
-/* var yulya = $('.yulya');
-var umnichka = $('#two');
-jQuery(function($){
-  document.removeClass('.swiper-slide-active');
-    yulya.on('click', function (index) {
-      umnichka.toggleClass('.swiper-slide-active');
-    });
-  }); */
+  nexts.css('left', prev.width() +10 + bullets.width() + 120);
 });
 
