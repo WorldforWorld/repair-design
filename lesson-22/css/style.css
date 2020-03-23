@@ -838,6 +838,10 @@ img {
     align-self: flex-end;
     padding: 1.32rem 3.5rem; }
 
+.steps__slide__image {
+  width: 765px;
+  height: 378px; }
+
 .steps__section-title__heading {
   margin-top: 16px;
   margin-bottom: 85px; }
