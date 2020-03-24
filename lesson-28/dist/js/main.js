@@ -172,9 +172,11 @@ $(document).ready(function () {
           message.toggleClass('message--visible');
           $(form)[0].reset();
           modal.removeClass('modal--visible');
+          ym('61266595', 'reachGoal', 'form'); return true;
         },
         error: function (response) {
           console.error('Ошибка запроса ' + response);
+          /* yaCounter61266595.reachGoal ('form'); */
         }
       });
     }
@@ -449,6 +451,20 @@ var ymap = function() {
     ymap();
   
   });
+  var player;
+  $('.video__play').on('click',  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '465',
+      width: '100%',
+      videoId: 'RHzzLqJWqHs',
+      events: {
+        'onReady': videoPlay,
+      }
+    });
+  });
 
+  function videoPlay(event) {
+    event.target.playVideo();
+  }
 });
 
