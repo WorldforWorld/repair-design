@@ -1,10 +1,34 @@
+@media screen and ( max-width: 1250px )
+  .furniture
+    &__name
+      margin-bottom: -50px
 @media screen and ( max-width: 1200px )
- 
+  .offer
+    &__stage
+      &__one
+        margin: 14% 0 0 53%
+      &__two
+        margin: 8% 0 0 61%
+      &__three
+        margin: 17% 0 0 64%
+      &__four
+        margin: 17% 60px 0 56%
+  .parents
+    left: 43px !important
+  .steps
+    &__bullet 
+      flex-basis: 29%
+      &:nth-child(3)
+        padding-left: 84px
+      &:nth-child(6)
+        padding-left: 84px
   html
     font-size: 12px
   .nav
     &__item
       margin-right: 1rem
+  .nexts
+    left: 202px !important
   .command
     &__icon
       left: -13%
@@ -15,7 +39,64 @@
       display: flex
       flex-direction: column
       align-items: center
+@media screen and ( max-width: 1066px )
+  .furniture__name
+    margin-top: 0
+  .offer
+    &__stage
+      &__one
+        margin: 18% 0 0 53% !important
+      &__two
+        margin: 8% 0 0 61% !important
+      &__three
+        margin: 17% 0 0 64%
+      &__four
+        margin: 17% 60px 0 56%
+@media screen and ( max-width: 1144px )
+  .offer
+    &__bank
+      width: 104%
+    &__stage
+      &__one
+        margin: 14% 0 0 53%
+      &__two
+        margin: 10% 0 0 61%
+      &__three
+        margin: 17% 0 0 64%
+      &__four
+        margin: 17% 60px 0 56%
 @media screen and ( max-width: 992px )
+  .furniture
+    display: none
+  .offer
+    display: none
+  .parents
+    left: 76px
+  .steps
+    &__swiper-slide
+      width: 100% !important
+    &__wraps
+      display: flex
+      flex-direction: column
+    &__bullet 
+      flex-basis: 29%
+    &__section-title 
+      margin-left: 25%
+  .nexts
+    left: 248px !important
+  .col
+    &-60
+      display: flex
+      justify-content: center
+      margin-left: auto
+      margin-right: auto
+      width: 60%
+      order: 1
+      margin-top: 46px
+      &:nth-last-of-type(1)
+        width: 90%
+        order: 0
+        margin-bottom: -127px
   .section
     &-title
       &__text
@@ -39,6 +120,8 @@
     width: auto
 
 @media screen and ( max-width: 768px )
+  .steps
+    display: none
   .row
     &-projects
       flex-direction: column

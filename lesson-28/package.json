@@ -27,6 +27,6 @@
   },
   "dependencies": {
     "gulp-htmlmin": "^5.0.1",
-    "gulp-tinypng-compress": "^1.2.5" 
+    "gulp-tinypng-compress": "^1.2.5"
   }
 }

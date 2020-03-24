@@ -168,7 +168,7 @@
       </div>
       <!-- /.container -->
     </section>
-    <!-- /.section section--dark projects -->
+    <!-- /.section section-dark projects -->
     <section class="section control">
       <div class="container">
         <div class="section-title control__section-title section-title--light wow fadeInUp">
@@ -323,9 +323,112 @@
       <!-- /.container -->
     </section>
     <!-- /.section types -->
-
-
-
+    <section class="section offer">
+      <div class="container">
+        <div class="line">
+          <div class="col-40">
+            <div class="offer__office">
+              <span class="offer__stage offer__stage__one">Наш специалист приедет для замеров в день контакта или назначит удобную для вас дату</span>
+              <span class="offer__stage offer__stage__two">Бесплатный замер</span>
+              <span class="offer__stage offer__stage__three">Бесплатная консультация</span>
+              <span class="offer__stage offer__stage__four">Получите смету расходов и сроки вашего будущего ремонта
+              </span>
+            </div>
+          </div>
+          <div class="col-40">
+            <div class="offer__modal modal--visible">
+              <div class="modal__dialog offer__modal__dialog">
+                <h3 class="offer__modal__title">Оставьте заявку на бесплатный выезд замерщика</h3>
+                <form action="send.php" method="POST" class="form offer__form">
+                  <div class="input-group modal__input-group">
+                    <label for="modal-user-name" class="label form__label label--light">Имя</label>
+                    <input type="text" name="userNameoffer" class="input form__input modal__input" id="modal-user-name" maxlength="15"  placeholder="Как вас зовут:">
+                  </div>
+                  <div class="input-group modal__input-group">
+                    <label for="modal-user-phone" class="label form__label label--light">Телефон</label>
+                    <input type="tel" name="userPhoneoffer" class="input form__input modal__input" id="modal-user-phone" placeholder="Ваш номер телефона:">
+                  </div>
+                  <div class="input-group modal__input-group">
+                    <label for="modal-user-email" class="label form__label label--light">Email</label>
+                    <input type="email" name="userEmailoffer" class="input form__input modal__input" id="modal-user-email-offer" placeholder="Ваш email:">
+                  </div>
+                  <div class="policy modal__policy offer__modal__policy">
+                    <input type="checkbox" name="policyCheckboxoffer" id="policy-checkboxoffer" class="policy__checkboxoffer" checked>
+                    <label for="policy-checkboxoffer" class="policy__label">Я соглашаюсь с обработкой данных</label>
+                  </div>
+                  <!-- /.policy -->
+                  <button class="button button--primary modal__button offer__modal__button">Вызвать замерщика</button>
+                </form>
+                <!-- /.form modal__form -->
+              </div>
+              <!-- /.modal__dialog -->
+            </div>
+            <!-- /.modal -->
+            <div class="offer__bank">
+              <div class="offer__bank__image">
+                <img src="img/offer/bank.png" alt="bank">
+              </div>
+              <span class="offer__bank__title">Это поможет сэкономить 10 - 20% от стоимости материалов</span>
+            </div>
+          </div>
+        </div>
+        <!-- /.line -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section offer -->
+    <section class="section furniture">
+      <!-- container -->
+      <div class="container">
+        <!-- future__wrap -->
+        <div class="furniture__wrap">
+          <!-- future__name -->
+          <div class="furniture__name">
+            <!-- future__name__list -->
+            <div class="furniture__name__list">
+              <!-- future__name__title -->
+              <h3 class="furniture__name__title">Мы реализуем ваши самые смелые фантазии</h3>
+              <span class="furniture__name__subtitle">Американская классика</span>
+              <!-- /.furniture__name__subtitle -->
+              <span class="furniture__name__subtitle">Имперский стиль</span>
+              <!-- /.furniture__name__subtitle -->
+              <span class="furniture__name__subtitle">Классика</span>
+              <!-- /.furniture__name__subtitle -->
+              <span class="furniture__name__subtitle">Лофт</span>
+              <!-- /.furniture__name__subtitle -->
+              <span class="furniture__name__subtitle">Минимализм</span>
+              <!-- /.furniture__name__subtitle -->
+              <span class="furniture__name__subtitle">Прованс</span>
+              <!-- /.furniture__name__subtitle -->
+              <span class="furniture__name__subtitle">Романтизм</span>
+              <!-- /.furniture__name__subtitle -->
+              <span class="furniture__name__subtitle">Скандинавский стиль</span>
+              <!-- /.furniture__name__subtitle -->
+              <span class="furniture__name__subtitle">Средиземноморский стиль</span>
+              <!-- /.furniture__name__subtitle -->
+              <span class="furniture__name__subtitle">Хайтек</span>
+              <!-- /.furniture__name__subtitle -->
+              <span class="furniture__name__subtitle">Эклектизм</span>
+              <!-- /.furniture__name__subtitle -->
+            </div>
+            <!-- /.furniture__name__list -->
+          </div>
+          <!-- /.furniture__name -->
+          <div class="furniture__position">
+            <img src="img/furniture/furniture-1.jpg" alt="furniture-1" class="furniture__position__image">
+            <img src="img/furniture/furniture-2.jpg" alt="furniture-1" class="furniture__position__image">
+          </div>
+          <!-- /.furniture__position -->
+          <div class="furniture__position">
+            <img src="img/furniture/furniture-3.jpg" alt="furniture-3" class="furniture__position__image">
+            <img src="img/furniture/furniture-4.jpg" alt="furniture-4" class="furniture__position__image">
+          </div>
+          <!-- /.furniture__position -->
+        </div>
+        <!-- /.furniture__wrap -->
+      </div>
+    </section>
+    <!-- /.section furniture -->
     <section class="section design">
       <div class="container">
         <div class="section-title design__section-title wow fadeInUp">
@@ -445,101 +548,86 @@
       </div>
       <!-- /.container -->
     </section>
-    <!-- /.section design-->
-    <section class="section section--dark projects steps">
+    <section class="section steps section--dark projects">
       <div class="container">
         <div class="row row-projects">
-          <div class="section-title section-title--left">
+          <div class="section-title steps__section-title section-title--left">
             <span class="section-title__information">как мы работаем</span>
-            <h2 class="section-title__heading section-title__heading--primary">6 шагов<span class="section-title__word">до цели</span></h2>
+            <h2 class="section-title__heading steps__section-title__heading section-title__heading--primary">6 шагов<span class="section-title__word steps__section-title__word">до цели</span></h2>
             <!-- /.section-title__heading -->
           </div>
-          <div class="wraps">
+          <div class="wraps steps__wraps">
             <div class="col-60">
               <!-- /.section-title -->
-              <div class="three four swiper-container">
+              <div class="swiper-container three">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper swiper-no-swiping">
                     <!-- Slides -->
-                    <div class="swiper-slide">
+                    <div class="swiper-slide steps__swiper-slide">
                       <span class="swiper-slide__information">1/6</span>
-                        <h3 class="swiper-slide__heading">Выезд на замеры помещения</h3>
-                        <span class="swiper-slide__value">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.
+                        <h3 class="swiper-slide__heading steps__swiper-slide__heading">Выезд на замеры помещения</h3>
+                        <span class="swiper-slide__value steps__swiper-slide__value">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.
                         </span>
-                        <span class="swiper-slide__value"><br>Оценщик приходит, чтобы измерить комнату. Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.</span>
+                        <span class="swiper-slide__value steps__swiper-slide__value"><br>Оценщик приходит, чтобы измерить комнату. Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.</span>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide steps__swiper-slide">
                       <span class="swiper-slide__information">2/6</span>
-                      <h3 class="swiper-slide__heading">Составление сметы</h3>
-                      <span class="swiper-slide__value">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.
+                      <h3 class="swiper-slide__heading steps__swiper-slide__heading">Составление сметы</h3>
+                      <span class="swiper-slide__value steps__swiper-slide__value">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.
                       </span>
-                      <span class="swiper-slide__value"><br>Оценщик приходит, чтобы измерить комнату. Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.</span>
+                      <span class="swiper-slide__value steps__swiper-slide__value"><br>Оценщик приходит, чтобы измерить комнату. Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.</span>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide steps__swiper-slide">
                       <span class="swiper-slide__information">3/6</span>
-                      <h3 class="swiper-slide__heading">Разработка  дизайн проекта</h3>
-                      <span class="swiper-slide__value">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.
+                      <h3 class="swiper-slide__heading steps__swiper-slide__heading">Разработка  дизайн проекта</h3>
+                      <span class="swiper-slide__value steps__swiper-slide__value">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.
                         </span>
-                        <span class="swiper-slide__value"><br>Оценщик приходит, чтобы измерить комнату. Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.</span>
+                        <span class="swiper-slide__value steps__swiper-slide__value"><br>Оценщик приходит, чтобы измерить комнату. Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.</span>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide steps__swiper-slide">
                       <span class="swiper-slide__information">4/6</span>
-                      <h3 class="swiper-slide__heading">Закупка расходных материалов</h3>
-                      <span class="swiper-slide__value">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.
+                      <h3 class="swiper-slide__heading steps__swiper-slide__heading">Закупка расходных материалов</h3>
+                      <span class="swiper-slide__value steps__swiper-slide__value">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.
                         </span>
-                        <span class="swiper-slide__value"><br>Оценщик приходит, чтобы измерить комнату. Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.</span>
+                        <span class="swiper-slide__value steps__swiper-slide__value"><br>Оценщик приходит, чтобы измерить комнату. Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.</span>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide steps__swiper-slide">
                       <span class="swiper-slide__information">5/6</span>
-                      <h3 class="swiper-slide__heading">Ремонтно-отделочные работы</h3>
-                      <span class="swiper-slide__value">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.
+                      <h3 class="swiper-slide__heading steps__swiper-slide__heading">Ремонтно-отделочные работы</h3>
+                      <span class="swiper-slide__value steps__swiper-slide__value">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.
                         </span>
-                        <span class="swiper-slide__value"><br>Оценщик приходит, чтобы измерить комнату. Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.</span>
+                        <span class="swiper-slide__value steps__swiper-slide__value"><br>Оценщик приходит, чтобы измерить комнату. Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.</span>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide steps__swiper-slide">
                       <span class="swiper-slide__information">6/6</span>
-                      <h3 class="swiper-slide__heading">Приемка-сдача работ</h3>
-                      <span class="swiper-slide__value">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.
+                      <h3 class="swiper-slide__heading steps__swiper-slide__heading">Приемка-сдача работ</h3>
+                      <span class="swiper-slide__value steps__swiper-slide__value">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.
                         </span>
-                        <span class="swiper-slide__value"><br>Оценщик приходит, чтобы измерить комнату. Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.</span>
+                        <span class="swiper-slide__value steps__swiper-slide__value"><br>Оценщик приходит, чтобы измерить комнату. Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.</span>
                     </div>
                 </div>
                 <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
-                <div class="five swiper-pagination"></div>
+                <div class="parents swiper-pagination"></div>
                 <div class="nexts swiper-button-next"></div>
               </div>
             </div>
-            <!-- /.col-50 -->
+            <!-- /.col-60 -->
             <div class="col-60">
-              <!-- Slider main container -->
-              <div class="four three swiper-container">
-                <div class="six swiper-paginations"></div>
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper swiper-no-swiping">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                      <img src="img/steps/steps.jpg" alt="steps0">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="img/steps/steps.jpg" alt="steps1">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="img/steps/steps.jpg" alt="steps2">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="img/steps/steps.jpg" alt="steps3">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="img/steps/steps.jpg" alt="steps4">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="img/steps/steps.jpg" alt="steps5">
-                    </div>
+                <!-- Swiper -->
+                <div class="swiper-container four steps__swiper-container">
+                  <div class="swiper-pagination steps__swiper-pagination"></div>
+                  <div class="swiper-wrapper swiper-no-swiping steps__swiper-wrapper">
+                    <div class="swiper-slide steps__slide__image"><img src="img/steps/steps.jpg" alt="steps"></div>
+                    <div class="swiper-slide steps__slide__image"><img src="img/steps/steps-2.jpg" alt="steps"></div>
+                    <div class="swiper-slide steps__slide__image"><img src="img/steps/steps-3.jpg" alt="steps"></div>
+                    <div class="swiper-slide steps__slide__image"><img src="img/steps/steps-4.jpg" alt="steps"></div>
+                    <div class="swiper-slide steps__slide__image"><img src="img/steps/steps-5.jpg" alt="steps"></div>
+                    <div class="swiper-slide steps__slide__image"><img src="img/steps/steps-6.jpg" alt="steps"></div>
+                  </div>
                 </div>
-              </div>
             </div>
-            <!-- /.col-50 -->
+            <!-- /.col-60 -->
           </div>
           <!-- /.wrap -->
         </div>

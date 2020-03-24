@@ -42,12 +42,11 @@ $(document).ready(function () {
   });
   /* --------------------------------------------- */
   var one = $('.one');
-  var two = $('.two');
   var three = $('.three');
   var four = $('.four');
 
 
-  var mySwiper = new Swiper (one, {
+  var swiper = new Swiper (one, {
     loop: true,
     pagination: {
       el: '.swiper-pagination',
@@ -58,7 +57,7 @@ $(document).ready(function () {
       prevEl: '.swiper-button-prev',
     },
   });
-  var mySwiper2 = new Swiper (two, {
+  var mySwiper = new Swiper (three, {
     loop: true,
     pagination: {
       el: '.swiper-pagination',
@@ -68,30 +67,48 @@ $(document).ready(function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    
   });
-  var mySwiper3 = new Swiper (three, {
+  var mySwiper4 = new Swiper (four,  {
     loop: true,
+    progressbarOpposite: true,
     pagination: {
-      el: '.five',
+      el: '.swiper-pagination',
       type: 'bullets',
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
-
-
-  var swiper = new Swiper (four, {
-    loop: true,
-    pagination: {
-      el: '.swiper-paginations',
-      type: 'bullets',
+      clickable: true,
       renderBullet: function (index, className) {
-        return '<span class="' + className + ' yulya' + '">' + '<span class="' + ' yulyas' + '">' + 0 + (index + 1)  + '</span>' + '<br>' + '<span class="' + ' yulyass' + '">' + 'Выезд на замер помещения' + '</span>' + '</span>';
+        if (index == 0) {
+          return '<span class="' + className  + ' steps__bullet' + '">' + '<span class="' + 'steps__index' + '">' + 0 + (index + 1) + '</span>'  + '<span class="' + 'steps__name' + '">' + 'Выезд на замер помещения' + '</span>' + '</span>';
+        }
+        if (index == 1) {
+          return '<span class="' + className  + ' steps__bullet' + '">' + '<span class="' + 'steps__index' + '">' + 0 + (index + 1) + '</span>'  + '<span class="' + 'steps__name' + '">' + 'Составление сметы' + '</span>' + '</span>';
+        }
+        if (index == 2) {
+          return '<span class="' + className  + ' steps__bullet' + '">' + '<span class="' + 'steps__index' + '">' + 0 + (index + 1) + '</span>'  + '<span class="' + 'steps__name' + '">' + 'Разработка  дизайн проекта' + '</span>' + '</span>';
+        }
+        if (index == 3) {
+          return '<span class="' + className  + ' steps__bullet' + '">' + '<span class="' + 'steps__index' + '">' + 0 + (index + 1) + '</span>'  + '<span class="' + 'steps__name' + '">' + 'Закупка расходных материалов' + '</span>' + '</span>';
+        }
+        if (index == 4) {
+          return '<span class="' + className  + ' steps__bullet' + '">' + '<span class="' + 'steps__index' + '">' + 0 + (index + 1) + '</span>'  + '<span class="' + 'steps__name' + '">' + 'Ремонтно-отделочные работы' + '</span>' + '</span>';
+        }
+        if (index == 5) {
+          return '<span class="' + className  + ' steps__bullet' + '">' + '<span class="' + 'steps__index' + '">' + 0 + (index + 1) + '</span>'  + '<span class="' + 'steps__name' + '">' + 'Приемка-сдача работ' + '</span>' + '</span>';
+        }
+      }
     },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
+    controller: {
+      control: mySwiper,
+      by: mySwiper,
+    }
   });
+  mySwiper.update();
+
+  
   var next =$('.swiper-button-next');
   var nexts =$('.nexts');
   var prev =$('.swiper-button-prev');
@@ -99,7 +116,7 @@ $(document).ready(function () {
 
   bullets.css('left', prev.width()+25);
   next.css('left', prev.width() +10 + bullets.width() + 30);
-  nexts.css('left', prev.width() +10 + bullets.width() + 100);
+  nexts.css('left', prev.width() +10 + bullets.width() + 120);
   new WOW().init();
 
   // Валидация формы
@@ -155,6 +172,64 @@ $(document).ready(function () {
           message.toggleClass('message--visible');
           $(form)[0].reset();
           modal.removeClass('modal--visible');
+        },
+        error: function (response) {
+          console.error('Ошибка запроса ' + response);
+        }
+      });
+    }
+  });
+  $('.offer__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // строчное правило
+      userNameoffer: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhoneoffer: "required",
+      // правило-объект (блок)
+      userEmailoffer: {
+        required: true,
+        email: true
+      },
+      policyCheckboxoffer: {
+        required: true
+      }
+    }, // сообщения
+    errorElement: "div",
+    messages: {
+      userNameoffer: {
+        required:"Заполните поле",
+        minlength: "Имя не короче двух букв",
+        maxlength: "Слишком длинное имя"
+      },
+      userPhoneoffer: "Заполните поле",
+      userEmailoffer: {
+        required: "Заполните поле",
+        email: "Введите корректный email"
+      },
+      policyCheckboxoffer: {
+        required: "Подтвердите соглашение"
+      }
+    },
+
+    errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+          return element.next('label').append(error);
+      }
+  
+       error.insertAfter($(element));
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          message.toggleClass('message--visible');
+          $(form)[0].reset();
         },
         error: function (response) {
           console.error('Ошибка запроса ' + response);
