@@ -368,7 +368,7 @@ template {
 .policy__checkbox, .policy__checkboxs, .policy__checkboxss, .policy__checkboxoffer {
   opacity: 0;
   visibility: hidden; }
-  .policy__checkbox:checked + .policy__label::before, .policy__checkboxs:checked + .policy__label::before, .policy__checkboxss:checked + .policy__label::before, .policy__checkboxoffer:checked + .policy__label::before {
+  .policy__checkbox:checked ~ .policy__label::before, .policy__checkboxs:checked ~ .policy__label::before, .policy__checkboxss:checked ~ .policy__label::before, .policy__checkboxoffer:checked ~ .policy__label::before {
     background: #E3B873 url("../img/check.svg") no-repeat center/0.8rem; }
 
 .policy__label {
@@ -396,31 +396,30 @@ input {
 div.invalid {
   color: tomato;
   position: absolute;
-  padding-top: 60px;
-  z-index: -1; }
+  margin-top: 55px !important; }
 
 .form__input.invalid {
   border-bottom: 1px solid tomato; }
 
 div#policyCheckbox-error.invalid {
-  margin-top: -32px;
-  right: 50%;
+  margin-top: 33px !important;
+  right: 49.5%;
   font-size: 1rem;
   font-family: 'Futura Book'; }
 
 div#policyCheckboxs-error.invalid {
   font-size: 1rem;
-  font-family: 'Futura Book'; }
+  font-family: 'Futura Book';
+  margin-top: 22px !important; }
 
 div#policyCheckboxss-error.invalid {
-  margin-top: -32px;
-  right: 50%;
+  margin-top: 28px !important;
+  right: 49%;
   font-size: 1rem;
   font-family: 'Futura Book'; }
 
 div#policyCheckboxoffer-error.invalid {
-  margin-top: -6px;
-  right: 62%;
+  margin-top: 22px !important;
   font-size: 1rem;
   font-family: 'Futura Book'; }
 
@@ -446,9 +445,10 @@ div#modal-user-email-offer-error {
   flex-basis: 30%; }
 
 .col-50 {
-  width: 50%; }
+  width: 45%; }
   .col-50:nth-last-of-type(1) {
-    margin-top: -208px; }
+    margin-top: -208px;
+    width: 55%; }
 
 .col-60 {
   width: 30%; }
@@ -845,13 +845,49 @@ img {
   .control__policy-label {
     justify-content: center; }
 
+.control__label {
+  color: rgba(54, 54, 54, 0.5); }
+
 .video__play {
   position: relative;
   margin: auto;
   cursor: pointer; }
 
+#control-user-name::-webkit-input-placeholder {
+  color: #363636; }
+
+#control-user-name::-moz-placeholder {
+  color: #363636; }
+
+#control-user-name:-ms-input-placeholder {
+  color: #363636; }
+
+#control-user-name::-ms-input-placeholder {
+  color: #363636; }
+
+#control-user-name::placeholder {
+  color: #363636; }
+
+#control-user-phone::-webkit-input-placeholder {
+  color: #363636; }
+
+#control-user-phone::-moz-placeholder {
+  color: #363636; }
+
+#control-user-phone:-ms-input-placeholder {
+  color: #363636; }
+
+#control-user-phone::-ms-input-placeholder {
+  color: #363636; }
+
+#control-user-phone::placeholder {
+  color: #363636; }
+
 .types__section-title {
   margin-bottom: 2rem; }
+  .types__section-title__heading {
+    font-size: 20px;
+    line-height: 28px; }
 
 .card__text {
   position: relative;
@@ -1019,6 +1055,16 @@ img {
 
 .design {
   position: relative; }
+  .design__section-title__heading {
+    font-size: 20px;
+    line-height: 28px; }
+  .design__section-title__texts {
+    font-family: 'Futura Book';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    max-width: 53rem; }
   .design::after {
     content: '';
     position: absolute;
@@ -1047,10 +1093,18 @@ img {
     text-align: center; }
   .command-section-title {
     color: #ffffff; }
+    .command-section-title__heading {
+      font-size: 20px;
+      line-height: 28px; }
     .command-section-title__texts {
+      font-family: 'Futura Book';
       color: #ffffff;
       max-width: 427px;
-      margin-bottom: 5.6rem; }
+      margin-bottom: 5.6rem;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 27px; }
   .command__icon {
     background-color: #E3B873;
     width: 70px;
@@ -1086,7 +1140,16 @@ img {
     flex-direction: row;
     align-items: center;
     margin: 24px 30px 17px 20px; }
+  .clients__section-title__heading {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 13px; }
   .clients__section-title__texts {
+    font-family: 'Futura Book';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
     margin-bottom: 10rem;
     max-width: 355px; }
   .clients__card__pricetag {
@@ -1118,7 +1181,8 @@ img {
     list-style: none;
     font-size: 15px;
     line-height: 180%;
-    padding-left: 5px; }
+    padding-left: 5px;
+    margin-right: 11px; }
   .clients__card__text {
     padding: 1.79rem 0.1rem;
     max-width: 379px;
@@ -1128,11 +1192,14 @@ img {
   .clients__card__title {
     display: inline-block;
     padding-top: 12px;
-    line-height: 23px; }
+    line-height: 23px;
+    margin-right: 10px; }
 
 .footer {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
   padding-top: 3rem; }
+  .footer__label {
+    color: rgba(255, 255, 255, 0.5); }
   .footer__wrap {
     background-color: #181818;
     max-width: 63.07rem;
@@ -1198,6 +1265,51 @@ img {
         text-decoration: none; }
     .footer__contacts__phone {
       margin-right: 0; }
+
+#footer-user-name::-webkit-input-placeholder {
+  color: #ffffff; }
+
+#footer-user-name::-moz-placeholder {
+  color: #ffffff; }
+
+#footer-user-name:-ms-input-placeholder {
+  color: #ffffff; }
+
+#footer-user-name::-ms-input-placeholder {
+  color: #ffffff; }
+
+#footer-user-name::placeholder {
+  color: #ffffff; }
+
+#footer-user-phone::-webkit-input-placeholder {
+  color: #ffffff; }
+
+#footer-user-phone::-moz-placeholder {
+  color: #ffffff; }
+
+#footer-user-phone:-ms-input-placeholder {
+  color: #ffffff; }
+
+#footer-user-phone::-ms-input-placeholder {
+  color: #ffffff; }
+
+#footer-user-phone::placeholder {
+  color: #ffffff; }
+
+#footer-user-question::-webkit-input-placeholder {
+  color: #ffffff; }
+
+#footer-user-question::-moz-placeholder {
+  color: #ffffff; }
+
+#footer-user-question:-ms-input-placeholder {
+  color: #ffffff; }
+
+#footer-user-question::-ms-input-placeholder {
+  color: #ffffff; }
+
+#footer-user-question::placeholder {
+  color: #ffffff; }
 
 /* &#34;Блок-обертка&#34;, где мы задаем фоновое изображение скриншотом как на карте */
 .ymap-container {
@@ -1296,6 +1408,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center; }
+  .modal__label {
+    color: rgba(255, 255, 255, 0.5); }
   .modal--visible {
     opacity: 1;
     visibility: visible; }
@@ -1339,6 +1453,51 @@ img {
   .modal__button {
     align-self: flex-end;
     padding: 1.32rem 3.5rem; }
+
+#modal-user-name::-webkit-input-placeholder {
+  color: #ffffff; }
+
+#modal-user-name::-moz-placeholder {
+  color: #ffffff; }
+
+#modal-user-name:-ms-input-placeholder {
+  color: #ffffff; }
+
+#modal-user-name::-ms-input-placeholder {
+  color: #ffffff; }
+
+#modal-user-name::placeholder {
+  color: #ffffff; }
+
+#modal-user-phone::-webkit-input-placeholder {
+  color: #ffffff; }
+
+#modal-user-phone::-moz-placeholder {
+  color: #ffffff; }
+
+#modal-user-phone:-ms-input-placeholder {
+  color: #ffffff; }
+
+#modal-user-phone::-ms-input-placeholder {
+  color: #ffffff; }
+
+#modal-user-phone::placeholder {
+  color: #ffffff; }
+
+#modal-user-email::-webkit-input-placeholder {
+  color: #ffffff; }
+
+#modal-user-email::-moz-placeholder {
+  color: #ffffff; }
+
+#modal-user-email:-ms-input-placeholder {
+  color: #ffffff; }
+
+#modal-user-email::-ms-input-placeholder {
+  color: #ffffff; }
+
+#modal-user-email::placeholder {
+  color: #ffffff; }
 
 .message {
   opacity: 0;

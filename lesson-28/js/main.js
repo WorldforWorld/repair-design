@@ -40,8 +40,37 @@ $(document).ready(function () {
   $('#upbutton').click(function() {
       $('html, body').stop().animate({scrollTop : 0}, 800);
   });
+
+  $("#hero").on("click","a", function (event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+    top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 800);
+  });
+  $("#menu").on("click","a", function (event) {
+    //отменяем стандартную обработку нажатия по ссылке
+    event.preventDefault();
+    //забираем идентификатор блока с атрибута href
+    var id  = $(this).attr('href'),
+    //узнаем высоту от начала страницы до блока на который ссылается якорь
+    top = $(id).offset().top;
+    //анимируем переход на расстояние - top за 1500 мс
+    $('body,html').animate({scrollTop: top}, 1500);
+  });
+  $("#menu1").on("click","a", function (event) {
+    //отменяем стандартную обработку нажатия по ссылке
+    event.preventDefault();
+    //забираем идентификатор бока с атрибута href
+    var id  = $(this).attr('href'),
+    //узнаем высоту от начала страницы до блока на который ссылается якорь
+        top = $(id).offset().top;
+    //анимируем переход на расстояние - top за 1500 мс
+    $('body,html').animate({scrollTop: top}, 1500);
+  });
+    
   /* --------------------------------------------- */
   var one = $('.one');
+  var two = $('.two');
   var three = $('.three');
   var four = $('.four');
 
@@ -52,6 +81,13 @@ $(document).ready(function () {
       el: '.swiper-pagination',
       type: 'bullets',
     },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+  var swiper1 = new Swiper (two, {
+    loop: true,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -326,7 +362,8 @@ $(document).ready(function () {
     }
   });
   // маска для телефона
-  $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
+  $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "Ваш номер телефона:"});
+  $('#offer-user-phone').mask('+7(000) 000-00-00', {placeholder: "Ваш телефон:"});
 
 //Переменная для включения/отключения индикатора загрузки
 var spinner = $('.ymap-container').children('.loader');
@@ -392,8 +429,7 @@ function getTileContainer(layer) {
   for (var k in layer) {
     if (layer.hasOwnProperty(k)) {
       if (
-        layer[k] instanceof ymaps.layer.tileContainer.CanvasContainer
-        || layer[k] instanceof ymaps.layer.tileContainer.DomContainer
+        layer[k] instanceof ymaps.layer.tileContainer.CanvasContainer || layer[k] instanceof ymaps.layer.tileContainer.DomContainer
       ) {
         return layer[k];
       }
