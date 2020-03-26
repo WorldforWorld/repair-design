@@ -86,7 +86,22 @@
   //       margin-right: 21px
 @media screen and ( max-width: 992px )
   .furniture
-    display: none
+    margin-top: -28px
+    background: #131313
+    margin-bottom: -50px
+    &::before
+      content: ''
+      background-color: #ffffff
+      width: 100%
+      height: 59%
+      display: block
+      position: absolute
+      top: 0
+    &__container
+      display: none
+    &__swiper
+      &__container
+        display: block
   .offer
     display: none
   .parents
@@ -189,14 +204,15 @@
         padding-right: 0
         font-size: 14px
         line-height: 158.48%
-  .swiper
-    &-button
-      &-prev
-        left: 50%
-        margin-left: -67px
-      &-next
-        left: 50% !important
-        margin-left: 95px
+  .projects
+    &__swiper
+      &-button
+        &-prev
+          left: 50%
+          margin-left: -67px
+        &-next
+          left: 50% !important
+          margin-left: 95px
     &-container
   .swiper-container-horizontal>.swiper-pagination-bullets
     justify-content: center
@@ -358,6 +374,10 @@
         &::placeholder
           color: $light
 @media screen and ( max-width: 570px )
+  .furniture
+    background: $dark
+    &__container
+      display: none !important
   .container
     display: flex
     justify-content: center
@@ -394,14 +414,15 @@
     &-slide
       &__text
         flex-basis: 50%
-  .swiper
-    &-button
-      &-prev
-        left: 50%
-        margin-left: -103px
-      &-next
-        left: 50% !important
-        margin-left: 60px
+  .projects
+    &__swiper
+      &-button
+        &-prev
+          left: 50%
+          margin-left: -103px
+        &-next
+          left: 50% !important
+          margin-left: 60px
     &-container
   .swiper-container-horizontal>.swiper-pagination-bullets
     margin-left: -62px
