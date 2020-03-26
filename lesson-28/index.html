@@ -330,14 +330,16 @@
     <section class="section offer" id="offer">
       <div class="container">
         <div class="line">
-          <div class="col-40 offer__office">
-            <div class="">
-              <span class="offer__stage offer__stage__one">Наш специалист приедет для замеров в день контакта или назначит удобную для вас дату</span>
-              <span class="offer__stage offer__stage__two">Бесплатный замер</span>
-              <span class="offer__stage offer__stage__three">Бесплатная консультация</span>
-              <span class="offer__stage offer__stage__four">Получите смету расходов и сроки вашего будущего ремонта
-              </span>
+          <div class="col-40">
+            <div class="offer__office">
             </div>
+                <div class="offer__list">
+                  <span class="offer__stage offer__stage__one">Наш специалист приедет для замеров в день контакта или назначит удобную для вас дату</span>
+                  <span class="offer__stage offer__stage__two">Бесплатный замер</span>
+                  <span class="offer__stage offer__stage__three">Бесплатная консультация</span>
+                  <span class="offer__stage offer__stage__four">Получите смету расходов и сроки вашего будущего ремонта
+                  </span>
+                </div>
           </div>
           <div class="col-40">
             <div class="offer__modal modal--visible">
@@ -392,40 +394,40 @@
             <div class="furniture__name__list">
               <!-- future__name__title -->
               <h3 class="furniture__name__title">Мы реализуем ваши самые смелые фантазии</h3>
-              <span class="furniture__name__subtitle">Американская классика</span>
+              <span class="furniture__name__subtitle furniture__decoration"><a id="but1">Американская классика</a></span>
               <!-- /.furniture__name__subtitle -->
-              <span class="furniture__name__subtitle">Имперский стиль</span>
+              <span class="furniture__name__subtitle"><a id="but2">Имперский стиль</a></span>
               <!-- /.furniture__name__subtitle -->
-              <span class="furniture__name__subtitle">Классика</span>
+              <span class="furniture__name__subtitle"><a id="but3">Классика</a></span>
               <!-- /.furniture__name__subtitle -->
-              <span class="furniture__name__subtitle">Лофт</span>
+              <span class="furniture__name__subtitle"><a id="but4">Лофт</a></span>
               <!-- /.furniture__name__subtitle -->
-              <span class="furniture__name__subtitle">Минимализм</span>
+              <span class="furniture__name__subtitle"><a id="but5">Минимализм</a></span>
               <!-- /.furniture__name__subtitle -->
-              <span class="furniture__name__subtitle">Прованс</span>
+              <span class="furniture__name__subtitle"><a id="but6">Прованс</a></span>
               <!-- /.furniture__name__subtitle -->
-              <span class="furniture__name__subtitle">Романтизм</span>
+              <span class="furniture__name__subtitle"><a id="but7">Романтизм</a></span>
               <!-- /.furniture__name__subtitle -->
-              <span class="furniture__name__subtitle">Скандинавский стиль</span>
+              <span class="furniture__name__subtitle"><a id="but8">Скандинавский стиль</a></span>
               <!-- /.furniture__name__subtitle -->
-              <span class="furniture__name__subtitle">Средиземноморский стиль</span>
+              <span class="furniture__name__subtitle"><a id="but9">Средиземноморский стиль</a></span>
               <!-- /.furniture__name__subtitle -->
-              <span class="furniture__name__subtitle">Хайтек</span>
+              <span class="furniture__name__subtitle"><a id="but10">Хайтек</a></span>
               <!-- /.furniture__name__subtitle -->
-              <span class="furniture__name__subtitle">Эклектизм</span>
+              <span class="furniture__name__subtitle"><a id="but11">Эклектизм</a></span>
               <!-- /.furniture__name__subtitle -->
             </div>
             <!-- /.furniture__name__list -->
           </div>
           <!-- /.furniture__name -->
           <div class="furniture__position">
-            <img src="img/furniture/furniture-1.jpg" alt="furniture-1" class="furniture__position__image">
-            <img src="img/furniture/furniture-2.jpg" alt="furniture-1" class="furniture__position__image">
+            <img id="setImg1" src="img/furniture/furniture-1.jpg" alt="furniture-1" class="furniture__position__image">
+            <img id="setImg2" src="img/furniture/furniture-2.jpg" alt="furniture-1" class="furniture__position__image">
           </div>
           <!-- /.furniture__position -->
           <div class="furniture__position">
-            <img src="img/furniture/furniture-3.jpg" alt="furniture-3" class="furniture__position__image">
-            <img src="img/furniture/furniture-4.jpg" alt="furniture-4" class="furniture__position__image">
+            <img id="setImg3" src="img/furniture/furniture-3.jpg" alt="furniture-3" class="furniture__position__image">
+            <img id="setImg4" src="img/furniture/furniture-4.jpg" alt="furniture-4" class="furniture__position__image">
           </div>
           <!-- /.furniture__position -->
         </div>
@@ -552,7 +554,7 @@
       </div>
       <!-- /.container -->
     </section>
-    <section class="section steps section--dark projects">
+    <section class="section steps section--dark">
       <div class="container">
         <div class="row row-projects">
           <div class="section-title steps__section-title section-title--left">
@@ -750,7 +752,7 @@
                   <!-- /.card__item -->
                 </ul>
                 <!-- /.card__list -->
-                <strong class="card__pricetag clients__card__pricetag">
+                <div class="card__pricetag clients__card__pricetag">
                   <span class="clients__card__result">
                     <img src="img/clients/square.svg" alt="square">
                     40 м<sup>2</sup>
@@ -759,7 +761,7 @@
                     <img src="img/clients/calendar.svg" alt="calendar">
                     48 дней
                   </span>
-                </strong>
+                </div>
                 <!-- /.card__pricetag -->
               </div>
               <!-- /.card__text -->
@@ -780,7 +782,7 @@
                   <!-- /.card__item -->
                 </ul>
                 <!-- /.card__list -->
-                <strong class="card__pricetag clients__card__pricetag">
+                <div class="card__pricetag clients__card__pricetag">
                   <span class="clients__card__result">
                     <img src="img/clients/square.svg" alt="square">
                     90 м<sup>2</sup>
@@ -789,7 +791,7 @@
                     <img src="img/clients/calendar.svg" alt="calendar">
                     128 дней
                   </span>
-                </strong>
+                </div>
                 <!-- /.card__pricetag -->
               </div>
               <!-- /.card__text -->
@@ -810,7 +812,7 @@
                   <!-- /.card__item -->
                 </ul>
                 <!-- /.card__list -->
-                <strong class="card__pricetag clients__card__pricetag">
+                <div class="card__pricetag clients__card__pricetag">
                   <span class="clients__card__result">
                     <img src="img/clients/square.svg" alt="square">
                     56 м<sup>2</sup>
@@ -819,7 +821,7 @@
                     <img src="img/clients/calendar.svg" alt="calendar">
                     86 дней
                   </span>
-                </strong>
+                </div>
                 <!-- /.card__pricetag -->
               </div>
               <!-- /.card__text -->
@@ -860,23 +862,23 @@
         <!-- /.form footer__form -->
       </div>
       <!-- /.footer-wrap -->
-      <div class="footer__contacts">
-        <span class="footer__contacts__title">Ростов на дону, Торговый центр Plaza Прямой телефон <a href="tel:+79997683299" class="phone contacts__phone footer__contacts__phone">+7 (999) 768-32-99</a></span>
-        <div class="footer__contacts__image">
-          <a href="#">
-            <img src="img/message.png" alt="message">
-          </a>
-          <a href="#">
-            <img src="img/instagram.png" alt="instagram">
-          </a>
+        <div class="footer__contacts">
+          <span class="footer__contacts__title">Ростов на дону, Торговый центр Plaza Прямой телефон <a href="tel:+79997683299" class="phone contacts__phone footer__contacts__phone">+7 (999) 768-32-99</a></span>
+          <div class="footer__contacts__image">
+            <a href="#">
+              <img src="img/message.png" alt="message">
+            </a>
+            <a href="#">
+              <img src="img/instagram.png" alt="instagram">
+            </a>
+          </div>
         </div>
-      </div>
-
-      <!-- map -->
-        <div class="ymap-container">
-          <div class="loader loader-default"></div>
-          <div id="map-yandex"></div>
-        </div><!-- .ymap-container -->
+  
+        <!-- map -->
+          <div class="ymap-container">
+            <div class="loader loader-default"></div>
+            <div id="map-yandex"></div>
+          </div><!-- .ymap-container -->
     </div>
     <!-- /.container -->
     <div class="footer__menu">

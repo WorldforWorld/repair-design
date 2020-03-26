@@ -502,5 +502,161 @@ var ymap = function() {
   function videoPlay(event) {
     event.target.playVideo();
   }
+  /* секция МЫ РЕАЛИЗУЕМ ВАШИ САМЫЕ СМЕЛЫЕ ФАНТАЗИИ */
+  (function($){
+
+    $.fn.updateImg = function(conf){
+        var defConf = {
+                        elem_img    : null,
+                        url_img     : null,
+                        elem_img2    : null,
+                        url_img2     : null,
+                        elem_img3    : null,
+                        url_img3     : null,
+                        elem_img4    : null,
+                        url_img4     : null,
+                      }
+        
+        $.extend(defConf, conf);
+        
+        if( defConf.elem_img != null && defConf.url_img != null ) {
+            $( this ).click(function() {
+                $( defConf.elem_img ).attr( "src", defConf.url_img );
+            });
+        }
+        if( defConf.elem_img2 != null && defConf.url_img2 != null ) {
+            $( this ).click(function() {
+                $( defConf.elem_img2 ).attr( "src", defConf.url_img2 );
+            });
+        }
+        if( defConf.elem_img3 != null && defConf.url_img3 != null ) {
+            $( this ).click(function() {
+                $( defConf.elem_img3 ).attr( "src", defConf.url_img3 );
+            });
+        }
+        if( defConf.elem_img4 != null && defConf.url_img4 != null ) {
+            $( this ).click(function() {
+                $( defConf.elem_img4 ).attr( "src", defConf.url_img4 );
+            });
+        }
+    }
+
+  })(jQuery);
+      $("#but1").updateImg({ 
+          elem_img : "#setImg1",
+          url_img  : "img/furniture/furniture-1.jpg",
+          elem_img2 : "#setImg2",
+          url_img2  : "img/furniture/furniture-2.jpg",
+          elem_img3 : "#setImg3",
+          url_img3  : "img/furniture/furniture-3.jpg",
+          elem_img4 : "#setImg4",
+          url_img4  : "img/furniture/furniture-4.jpg"
+
+      });
+      $("#but2").updateImg({ 
+          elem_img : "#setImg1",
+          url_img  : "img/furniture/furniture-11.jpg",
+          elem_img2 : "#setImg2",
+          url_img2  : "img/furniture/furniture-21.jpg",
+          elem_img3 : "#setImg3",
+          url_img3  : "img/furniture/furniture-31.jpg",
+          elem_img4 : "#setImg4",
+          url_img4  : "img/furniture/furniture-41.jpg"
+      });
+      $("#but3").updateImg({ 
+        elem_img : "#setImg1",
+        url_img  : "img/furniture/furniture-12.jpg",
+        elem_img2 : "#setImg2",
+        url_img2  : "img/furniture/furniture-22.jpg",
+        elem_img3 : "#setImg3",
+        url_img3  : "img/furniture/furniture-32.jpg",
+        elem_img4 : "#setImg4",
+        url_img4  : "img/furniture/furniture-42.jpg"
+      });
+      $("#but4").updateImg({ 
+        elem_img : "#setImg1",
+        url_img  : "img/furniture/furniture-13.jpg",
+        elem_img2 : "#setImg2",
+        url_img2  : "img/furniture/furniture-23.jpg",
+        elem_img3 : "#setImg3",
+        url_img3  : "img/furniture/furniture-33.jpg",
+        elem_img4 : "#setImg4",
+        url_img4  : "img/furniture/furniture-43.jpg"
+      });
+      $("#but5").updateImg({ 
+        elem_img : "#setImg1",
+        url_img  : "img/furniture/furniture-14.jpg",
+        elem_img2 : "#setImg2",
+        url_img2  : "img/furniture/furniture-24.jpg",
+        elem_img3 : "#setImg3",
+        url_img3  : "img/furniture/furniture-34.jpg",
+        elem_img4 : "#setImg4",
+        url_img4  : "img/furniture/furniture-44.jpg"
+      });
+      $("#but6").updateImg({ 
+        elem_img : "#setImg1",
+        url_img  : "img/furniture/furniture-11.jpg",
+        elem_img2 : "#setImg2",
+        url_img2  : "img/furniture/furniture-21.jpg",
+        elem_img3 : "#setImg3",
+        url_img3  : "img/furniture/furniture-31.jpg",
+        elem_img4 : "#setImg4",
+        url_img4  : "img/furniture/furniture-41.jpg"
+      });
+      $("#but7").updateImg({ 
+        elem_img : "#setImg1",
+        url_img  : "img/furniture/furniture-12.jpg",
+        elem_img2 : "#setImg2",
+        url_img2  : "img/furniture/furniture-22.jpg",
+        elem_img3 : "#setImg3",
+        url_img3  : "img/furniture/furniture-32.jpg",
+        elem_img4 : "#setImg4",
+        url_img4  : "img/furniture/furniture-42.jpg"
+      });
+      $("#but8").updateImg({ 
+        elem_img : "#setImg1",
+        url_img  : "img/furniture/furniture-13.jpg",
+        elem_img2 : "#setImg2",
+        url_img2  : "img/furniture/furniture-23.jpg",
+        elem_img3 : "#setImg3",
+        url_img3  : "img/furniture/furniture-33.jpg",
+        elem_img4 : "#setImg4",
+        url_img4  : "img/furniture/furniture-43.jpg"
+      });
+      $("#but9").updateImg({ 
+        elem_img : "#setImg1",
+        url_img  : "img/furniture/furniture-14.jpg",
+        elem_img2 : "#setImg2",
+        url_img2  : "img/furniture/furniture-24.jpg",
+        elem_img3 : "#setImg3",
+        url_img3  : "img/furniture/furniture-34.jpg",
+        elem_img4 : "#setImg4",
+        url_img4  : "img/furniture/furniture-44.jpg"
+      });
+      $("#but10").updateImg({ 
+        elem_img : "#setImg1",
+        url_img  : "img/furniture/furniture-11.jpg",
+        elem_img2 : "#setImg2",
+        url_img2  : "img/furniture/furniture-21.jpg",
+        elem_img3 : "#setImg3",
+        url_img3  : "img/furniture/furniture-31.jpg",
+        elem_img4 : "#setImg4",
+        url_img4  : "img/furniture/furniture-41.jpg"
+      });
+      $("#but11").updateImg({ 
+        elem_img : "#setImg1",
+        url_img  : "img/furniture/furniture-12.jpg",
+        elem_img2 : "#setImg2",
+        url_img2  : "img/furniture/furniture-22.jpg",
+        elem_img3 : "#setImg3",
+        url_img3  : "img/furniture/furniture-32.jpg",
+        elem_img4 : "#setImg4",
+        url_img4  : "img/furniture/furniture-42.jpg"
+      });
+      $(".furniture__name__list .furniture__name__subtitle").click(function(e) {
+        e.preventDefault();
+        $(".furniture__name__list .furniture__name__subtitle").removeClass('furniture__decoration');
+        $(this).addClass('furniture__decoration');
+      })
 });
 
