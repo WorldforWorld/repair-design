@@ -136,6 +136,23 @@
     width: auto
 
 @media screen and ( max-width: 768px )
+  .command
+    &-section
+      &-title
+        &__heading
+          font-size: 22px
+          line-height: 138.6%
+        &__texts
+          font-size: 15px
+          line-height: 135.84%
+  .swiper
+    &-slide
+      &__heading
+        font-size: 14px
+        line-height: 138.6% 
+      &__value
+        font-size: 14px
+        line-height: 135.84%
   .steps
     display: none
   .row
@@ -165,9 +182,13 @@
         &--primary
           text-align: center
           margin-bottom: 6px
+          font-size: 22px
+          line-height: 138.6%
       &__text
         text-align: center
         padding-right: 0
+        font-size: 14px
+        line-height: 158.48%
   .swiper
     &-button
       &-prev
@@ -183,7 +204,29 @@
   .indent
   .upindent
     margin-bottom: -4.5rem
-
+  .control
+    &__section
+      &-title
+        font-size: 15px
+        line-height: 138.6%
+    &__text
+      font-size: 14px
+      line-height: 169.8%
+  .types
+    &__section
+      &-title
+        &__heading 
+          font-size: 22px
+          line-height: 138.6%
+  .design
+    &__section
+      &-title
+        &__heading
+          font-size: 22px
+          line-height: 138.6%
+        &__texts
+          font-size: 15px
+          line-height: 135.84%
 @media screen and ( max-width: 760px )
   .row
     flex-direction: column
@@ -195,6 +238,7 @@
     &__text
       margin-left: 0
   .design
+    padding-bottom: 99px
     background-color: $dark
     &__section-title
       color: $light
@@ -212,6 +256,16 @@
   .footer
     background-color: $black
     background-image: none
+    &__title
+      font-size: 20px
+      line-height: 28px
+    &__button
+      font-size: 15px
+      line-height: 26px
+    &__contacts
+      &__title
+        font-size: 18px
+        line-height: 138.6%
   .command
     background-color: $dark
     &-control
@@ -222,6 +276,15 @@
     &-card
       &__text
         margin-left: auto
+        & h3
+          font-size: 18px
+          line-height: 25px
+        & ul li
+          font-size: 18px
+          line-height: 26px
+      &__pricetag
+        font-size: 13px
+        line-height: 20px
     &__icon
       left: -13%
   .clients
@@ -310,7 +373,8 @@
     &__button
       display: none
   .title
-    font-size: 1.64rem
+    font-size: 23px
+    line-height: 132.83%
   .hero
     height: auto
     &__scroll-down
@@ -319,12 +383,13 @@
       max-width: 22.86rem
       margin: 0 auto
     &__text
-      font-size: 1.29rem
+      // font-size: 1.29rem
       margin-bottom: 2.28rem
     &__button
       display: block
       min-width: 22.86rem
       margin-bottom: 1.85rem
+      font-size: 13px
   .swiper
     &-slide
       &__text

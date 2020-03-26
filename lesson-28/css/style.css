@@ -1741,6 +1741,18 @@ img {
     width: auto; } }
 
 @media screen and (max-width: 768px) {
+  .command-section-title__heading {
+    font-size: 22px;
+    line-height: 138.6%; }
+  .command-section-title__texts {
+    font-size: 15px;
+    line-height: 135.84%; }
+  .swiper-slide__heading {
+    font-size: 14px;
+    line-height: 138.6%; }
+  .swiper-slide__value {
+    font-size: 14px;
+    line-height: 135.84%; }
   .steps {
     display: none; }
   .row-projects {
@@ -1764,10 +1776,14 @@ img {
       display: none; }
   .section-title__heading--primary {
     text-align: center;
-    margin-bottom: 6px; }
+    margin-bottom: 6px;
+    font-size: 22px;
+    line-height: 138.6%; }
   .section-title__text {
     text-align: center;
-    padding-right: 0; }
+    padding-right: 0;
+    font-size: 14px;
+    line-height: 158.48%; }
   .swiper-button-prev {
     left: 50%;
     margin-left: -67px; }
@@ -1778,7 +1794,22 @@ img {
     justify-content: center;
     margin-left: -25px; }
   .upindent {
-    margin-bottom: -4.5rem; } }
+    margin-bottom: -4.5rem; }
+  .control__section-title {
+    font-size: 15px;
+    line-height: 138.6%; }
+  .control__text {
+    font-size: 14px;
+    line-height: 169.8%; }
+  .types__section-title__heading {
+    font-size: 22px;
+    line-height: 138.6%; }
+  .design__section-title__heading {
+    font-size: 22px;
+    line-height: 138.6%; }
+  .design__section-title__texts {
+    font-size: 15px;
+    line-height: 135.84%; } }
 
 @media screen and (max-width: 760px) {
   .row {
@@ -1789,6 +1820,7 @@ img {
   .card__text {
     margin-left: 0; }
   .design {
+    padding-bottom: 99px;
     background-color: #131313; }
     .design__section-title {
       color: #ffffff; }
@@ -1805,6 +1837,15 @@ img {
   .footer {
     background-color: #181818;
     background-image: none; }
+    .footer__title {
+      font-size: 20px;
+      line-height: 28px; }
+    .footer__button {
+      font-size: 15px;
+      line-height: 26px; }
+    .footer__contacts__title {
+      font-size: 18px;
+      line-height: 138.6%; }
   .command {
     background-color: #131313; }
     .command-control__text {
@@ -1813,6 +1854,15 @@ img {
       text-align: center; }
     .command-card__text {
       margin-left: auto; }
+      .command-card__text h3 {
+        font-size: 18px;
+        line-height: 25px; }
+      .command-card__text ul li {
+        font-size: 18px;
+        line-height: 26px; }
+    .command-card__pricetag {
+      font-size: 13px;
+      line-height: 20px; }
     .command__icon {
       left: -13%; }
   .clients__section-title__heading {
@@ -1920,7 +1970,8 @@ img {
     .contacts__button {
       display: none; }
   .title {
-    font-size: 1.64rem; }
+    font-size: 23px;
+    line-height: 132.83%; }
   .hero {
     height: auto; }
     .hero__scroll-down {
@@ -1929,12 +1980,12 @@ img {
       max-width: 22.86rem;
       margin: 0 auto; }
     .hero__text {
-      font-size: 1.29rem;
       margin-bottom: 2.28rem; }
     .hero__button {
       display: block;
       min-width: 22.86rem;
-      margin-bottom: 1.85rem; }
+      margin-bottom: 1.85rem;
+      font-size: 13px; }
   .swiper-slide__text {
     flex-basis: 50%; }
   .swiper-button-prev {
