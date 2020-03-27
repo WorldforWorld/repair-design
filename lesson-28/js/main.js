@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  document.addEventListener("touchstart", function(){}, true);
   var modal = $('.modal'),
       message = $('.message'),
       modalBtn = $('[data-toggle=modal]'),
@@ -149,23 +150,17 @@ $(document).ready(function () {
     }
   });
   mySwiper.update();
-
   
+
   var next =$('.swiper-button-next');
-  var furniture =$('.swiper-button-next');
   var nexts =$('.nexts');
-  var furniture__next =$('.furniture__next');
-  var slide =$('.fswiper-wrapper');
   var prev =$('.swiper-button-prev');
   var bullets =$('.swiper-pagination');
 
-  // furniture__next.css('top', (next.height()/2)-30);
-  furniture__next.css('left', furniture.left());
   bullets.css('left', prev.width()+25);
   next.css('left', prev.width() +10 + bullets.width() + 30);
   nexts.css('left', prev.width() +10 + bullets.width() + 120);
   new WOW().init();
-
   // Валидация формы
   $('.modal__form').validate({
     errorClass: "invalid",

@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  document.addEventListener("touchstart", function(){}, true);
   var modal = $('.modal'),
       message = $('.message'),
       modalBtn = $('[data-toggle=modal]'),
@@ -105,6 +106,12 @@ $(document).ready(function () {
     },
     
   });
+  var swiperfurniture = new Swiper('.furniture__swiper__container', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
   var mySwiper4 = new Swiper (four,  {
     loop: true,
     progressbarOpposite: true,
@@ -143,8 +150,8 @@ $(document).ready(function () {
     }
   });
   mySwiper.update();
-
   
+
   var next =$('.swiper-button-next');
   var nexts =$('.nexts');
   var prev =$('.swiper-button-prev');
@@ -154,7 +161,6 @@ $(document).ready(function () {
   next.css('left', prev.width() +10 + bullets.width() + 30);
   nexts.css('left', prev.width() +10 + bullets.width() + 120);
   new WOW().init();
-
   // Валидация формы
   $('.modal__form').validate({
     errorClass: "invalid",

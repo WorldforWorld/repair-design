@@ -1,6 +1,9 @@
 .footer
   background: $dark url('../img/footer-bg.jpg') no-repeat center / cover
   padding-top: 3rem
+  &__container
+    display: flex
+    flex-direction: column
   &__label
     color: rgba($light, 0.5)
   &__wrap
@@ -11,6 +14,7 @@
     margin-bottom: 3.714rem
     padding: 2.5rem
     position: relative
+    width: 100%
   &__title
     text-transform: uppercase
     font-family: 'Yeseva one', curive
@@ -68,6 +72,8 @@
         text-decoration: none
     &__phone
       margin-right: 0
+      text-decoration: none
+      color: $primary !important
 #footer
   &-user
     &-name
@@ -83,6 +89,7 @@
 
 /* &#34;Блок-обертка&#34;, где мы задаем фоновое изображение скриншотом как на карте */
 .ymap-container
+  width: 100%
   margin: auto
   margin-bottom: 4.7rem
   min-height: 465px

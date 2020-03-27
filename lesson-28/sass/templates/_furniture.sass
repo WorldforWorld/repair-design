@@ -2,7 +2,7 @@
   margin-top: 170px
   margin-bottom: 70px
   position: relative
-  background: $dark url('../img/furniture/furniture-bg.jpg') no-repeat center / cover
+  background: $black url('../img/furniture/furniture-bg.jpg') no-repeat center / cover
   &::before
     content: ''
     position: absolute
@@ -10,7 +10,7 @@
     left: 0
     width: 100%
     height: 100%
-    background-color: rgba($dark, 0.7)
+    background-color: rgba($dark, 0.9)
   &-slide
     text-align: center
     font-size: 18px
@@ -24,6 +24,7 @@
     background: url('../img/furniture/furniture-next.png') no-repeat center
     position: absolute
     top: 40%
+    left: calc(var(--swiper-slide)) !important
     width: calc(var(--swiper-navigation-size)/ 60 * 50)
     height: var(--swiper-navigation-size)
     margin-top: calc(-1 * var(--swiper-navigation-size)/ 2)
