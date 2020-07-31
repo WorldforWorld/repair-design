@@ -1,0 +1,91 @@
+.button
+  outline: none
+  padding: 11px 24px
+  border: none
+  border-radius: 2px
+  text-transform: uppercase
+  font-size: 0.93rem
+  &:hover
+    cursor: pointer
+  &--primary
+    background-color: $primary
+    color: $light
+    box-shadow: 0px 5px 15px rgba($primary, 0.2)
+    transition: box-shadow 0.3s
+    &:hover
+      box-shadow: none
+  &--outline
+    border: 1px solid $light
+    background-color: transparent
+    color: $light
+.input
+  font-size: 1.07rem
+  &--light
+    color: rgba($light, 0.5)
+.input
+  background-color: transparent
+  border: none
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3)
+  font-size: 1.285rem
+  color: $light
+  padding: 0.5rem 0
+  &--light
+    &::placeholder
+      color: $light
+  &--dark
+    color: $dark
+.policy
+  &__checkbox, &__checkboxs, &__checkboxss,  &__checkboxoffer
+    opacity: 0
+    visibility: hidden
+    &:checked ~
+      .policy__label
+        &::before
+          background: $primary url('../img/check.svg') no-repeat center / 0.8rem
+  &__label
+    display: flex
+    align-items: center
+    font-family: 'FuturaBookC'
+    font-style: normal
+    font-weight: normal
+    line-height: 22px
+    font-size: 1.143rem
+    &::before
+      content: ''
+      width: 18px
+      height: 18px
+      border: 1px solid $primary
+      border-radius: 1px
+      cursor: pointer
+      margin-right: 0.64rem
+    &--center
+      justify-content: center
+.input
+input
+  outline: none
+div.invalid
+  color: tomato
+  position: absolute
+  margin-top: 55px !important
+.form__input.invalid
+  border-bottom: 1px solid tomato
+div#policyCheckbox-error.invalid
+  margin-top: 33px !important
+  right: 49.5%
+  font-size: 1rem
+  font-family: 'Futura Book'
+div#policyCheckboxs-error.invalid
+  font-size: 1rem
+  font-family: 'Futura Book'
+  margin-top: 22px !important
+div#policyCheckboxss-error.invalid
+  margin-top: 28px !important
+  right: 49%
+  font-size: 1rem
+  font-family: 'Futura Book'
+div#policyCheckboxoffer-error.invalid
+  margin-top: 22px !important
+  font-size: 1rem
+  font-family: 'Futura Book'
+div#modal-user-email-offer-error
+  margin-top: -8px

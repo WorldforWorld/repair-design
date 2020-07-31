@@ -1,0 +1,168 @@
+.footer
+  background: $dark url('../img/footer-bg.jpg') no-repeat center / cover
+  padding-top: 3rem
+  &__container
+    display: flex
+    flex-direction: column
+  &__label
+    color: rgba($light, 0.5)
+  &__wrap
+    background-color: $black
+    max-width: 63.07rem
+    margin: auto
+    margin-top: -20rem
+    margin-bottom: 3.714rem
+    padding: 2.5rem
+    position: relative
+    width: 100%
+  &__title
+    text-transform: uppercase
+    font-family: 'Yeseva one', curive
+    font-weight: normal
+    font-size: 1.428rem
+    text-align: center
+    margin-bottom: 3.214rem
+    margin-top: 0
+  &__form
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    max-width: 37.142rem
+    margin: auto
+  &__input
+    padding-top: 0.3rem
+    &-group
+      display: flex
+      flex-direction: column
+      flex-basis: 45%
+      margin-bottom: 3.2rem
+      &--full-width
+        flex-basis: 100%
+        margin-bottom: 2rem
+  &__policy
+    flex-basis: 100%
+    margin-bottom: 3.6rem
+  &__button
+    margin: auto
+    padding: 1.285rem 4.785rem
+  &__menu
+    background-color: $dark
+    padding: 4.285rem 0
+    padding-right: 20px
+  &__contacts
+    text-align: center
+    &__title
+      display: inline-block
+      max-width: 39.07rem
+      margin-bottom: 1.7rem
+      font-family: 'Yeseva One', curive
+      font-style: normal
+      font-weight: normal
+      font-size: 1.428rem
+      line-height: 2rem
+      text-align: center
+      text-transform: uppercase
+      color: $primary
+    &__image
+      display: inline-block
+      width: 100%
+      margin-bottom: 2.9rem
+      & a
+        margin-right: 1rem
+        text-decoration: none
+    &__phone
+      margin-right: 0
+      text-decoration: none
+      color: $primary !important
+#footer
+  &-user
+    &-name
+      &::placeholder
+        color: $light
+    &-phone
+      &::placeholder
+        color: $light
+    &-question
+      &::placeholder
+        color: $light
+
+
+/* &#34;Блок-обертка&#34;, где мы задаем фоновое изображение скриншотом как на карте */
+.ymap-container
+  width: 100%
+  margin: auto
+  margin-bottom: 4.7rem
+  min-height: 465px
+  max-width: 925px
+  position: relative
+  overflow: hidden
+  cursor: pointer
+  background: url('../img/yandex-before-load-marker.png') #ffffff no-repeat
+  background-position: center center
+  background-size: cover
+
+ 
+/* Блок, в котором появится Яндекс.Карта */
+#map-yandex 
+  position: relative
+  z-index: 7
+  min-height: 465px
+  max-width: 925px
+  cursor: pointer
+  background-color: transparent
+
+/* Индикатор загрузки, который показывается до загрузки карты */
+.loader 
+  position: absolute
+  z-index: 15
+  top: -100%
+  left: 0
+  box-sizing: border-box
+  width: 100%
+  height: 100%
+  overflow: hidden
+  color: #000000
+  transition: opacity .7s ease
+  opacity: 0
+  background-color: rgba(0,0,0,.55)
+
+ 
+.loader:after,
+.loader:before 
+  box-sizing: border-box
+
+ 
+.loader.is-active 
+  top: 0
+  opacity: 1
+
+ 
+.loader-default:after 
+  position: absolute;
+  top: calc(50% - 24px)
+  left: calc(50% - 24px)
+  width: 48px
+  height: 48px
+  content: ''
+  animation: rotation 1s linear infinite
+  border: solid 8px #ffffff
+  border-left-color: transparent
+  border-radius: 50%
+
+ 
+@keyframes rotation 
+  from 
+    transform: rotate(0)
+  
+  to 
+    transform: rotate(359deg)
+  
+
+ 
+@keyframes blink 
+  from 
+    opacity: .5
+  
+  to 
+    opacity: 1
+  

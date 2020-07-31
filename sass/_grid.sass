@@ -1,0 +1,36 @@
+.container
+  width: 85%
+  max-width: 1256px
+  margin: auto
+
+.row
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+.line
+  display: flex
+  justify-content: center
+.col
+  &-30
+    position: relative
+    flex-basis: 30%
+  &-50
+    width: 45%
+    &:nth-last-of-type(1)
+      margin-top: -208px
+      width: 55%
+  &-60
+    width: 30%
+    &:nth-last-of-type(1)
+      width: 70%
+      margin-left: 8%
+  &-40
+    width: 55%
+    position: relative
+    &:nth-last-of-type(1)
+      width: 45%
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+      
+      
